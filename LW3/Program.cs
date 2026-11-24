@@ -88,7 +88,7 @@ builder.Services.AddSingleton<IMongoClient>(sp =>
 });
 
 // Реєстрація бази даних
-var builder = WebApplication.CreateBuilder(args);
+//var builder = WebApplication.CreateBuilder(args);
 
 var port = Environment.GetEnvironmentVariable("PORT") ?? "5000";
 
