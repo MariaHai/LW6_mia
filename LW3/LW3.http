@@ -1,0 +1,6 @@
+@LW3_HostAddress = http://localhost:5086
+
+GET {{LW3_HostAddress}}/weatherforecast/
+Accept: application/json
+
+###
