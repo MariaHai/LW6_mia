@@ -1,0 +1,5 @@
+<Solution>
+  <Project Path="../LW4_5/LW3/LW3.csproj" />
+  <Project Path="LW5_MathProject/LW5_MathProject.csproj" />
+  <Project Path="MathApp.Test/MathApp.Test.csproj" />
+</Solution>
