@@ -159,19 +159,12 @@ builder.Services.AddAutoMapper(cfg =>
     cfg.AddProfile<ApiMappingProfile>();
 });
 var app = builder.Build();
-app.UseMiddleware<ExceptionHandlingMiddleware>();
 
+app.UseMiddleware<ExceptionHandlingMiddleware>();
 app.UseHttpsRedirection();
-app.UseAuthentication();     // ОБОВ'ЯЗКОВО перед UseAuthorization
-app.UseAuthorization();
-app.MapControllers();
-app.Run();
-app.UseMiddleware<ExceptionHandlingMiddleware>();
-
-
 app.UseSwagger();
 app.UseSwaggerUI();
-
-app.UseHttpsRedirection();
+app.UseAuthentication();
+app.UseAuthorization();
 app.MapControllers();
 app.Run();
